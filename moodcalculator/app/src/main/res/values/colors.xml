@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="twine_blue_1">#F0F3FA</color>
+    <color name="twine_blue_2">#D5DEEF</color>
+    <color name="twine_blue_3">#B1C9EF</color>
+    <color name="twine_blue_4">#8AAEE0</color>
+    <color name="twine_blue_5">#628ECB</color>
+    <color name="twine_blue_6">#395886</color>
+
+    <color name="twine_bg_deep">#395886</color>
+    <color name="twine_accent_light">#F0F3FA</color>
+    <color name="twine_blue_mid">#628ECB</color>
+</resources>
