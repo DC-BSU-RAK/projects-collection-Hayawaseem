@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="splash_bg">#F5EBE0</color>
+    <!-- Background: Light Cream -->
+    <color name="bg_cream">#F5EBE0</color>
+    <!-- Contrast: Dark Chocolate -->
+    <color name="chocolate_dark">#4E342E</color>
+    <!-- Highlight: Tan/Beige for Ingredient boxes -->
+    <color name="ingredient_tan">#E3D5CA</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="star_gold">#795548</color>
+
+    <!-- Overriding default material colors to stop the pink -->
+    <color name="purple_500">#000000</color>
+    <color name="purple_700">#4E342E</color>
+    <color name="teal_200">#E3D5CA</color>
+</resources>

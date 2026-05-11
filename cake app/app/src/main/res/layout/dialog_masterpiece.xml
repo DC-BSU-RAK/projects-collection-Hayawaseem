@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="16dp"
+    android:layout_gravity="center"
+    android:backgroundTint="#F5E8D7">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imgFinalProduct"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/chocolate_bar" />
+
+        <TextView
+            android:id="@+id/txtFinalTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Cake Name"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#3E2723"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/imgFinalProduct"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/txtFinalPrice" />
+
+        <TextView
+            android:id="@+id/txtFinalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50$"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="@id/txtFinalTitle"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/txtReviews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="34 reviews ★★★★☆"
+            android:textSize="12sp"
+            android:textColor="#8D6E63"
+            app:layout_constraintTop_toBottomOf="@id/txtFinalTitle"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enjoy this sweet and delicious masterpiece made just for you with premium ingredients."
+            android:textSize="14sp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/txtReviews" />
+
+        <TextView
+            android:id="@+id/lblSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Size"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/txtDescription"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/layoutSizeButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/lblSize">
+
+            <Button
+                android:id="@+id/btnSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SMALL"
+                android:backgroundTint="#E7D9CC"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btnMedium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="MEDIUM"
+                android:backgroundTint="#000000"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnLarge"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="LARGE"
+                android:backgroundTint="#E7D9CC"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONFIRM ORDER"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#3E2723"
+            android:textColor="#FFFFFF"
+            app:layout_constraintTop_toBottomOf="@id/layoutSizeButtons"
+            app:cornerRadius="12dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
